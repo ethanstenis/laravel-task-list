@@ -14,6 +14,8 @@
 use App\Task;
 use Illuminate\Http\Request;
 
+Route::group(['middleware' => 'web'], function () {
+
 Route::get('/', function () {
     $tasks = Task::orderBy('created_at', 'asc')->get();
 
@@ -51,6 +53,8 @@ Route::delete('/task/{id}', function ($id) {
     Task::findOrFail($id)->delete();
 
     return redirect('/');
+});
+
 });
 
 /*
