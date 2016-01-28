@@ -55,7 +55,6 @@ Route::delete('/task/{id}', function ($id) {
     return redirect('/');
 });
 
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -68,6 +67,6 @@ Route::delete('/task/{id}', function ($id) {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
     //
+
 });
