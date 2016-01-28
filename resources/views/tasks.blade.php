@@ -58,12 +58,6 @@
                                 </td>
 
                                 <td>
-                                    <!-- Delete Button -->
-                                    <tr>
-    <!-- Task Name -->
-    <td class="table-text">
-        <div>{{ $task->name }}</div>
-    </td>
 
     <!-- Delete Button -->
     <td>
